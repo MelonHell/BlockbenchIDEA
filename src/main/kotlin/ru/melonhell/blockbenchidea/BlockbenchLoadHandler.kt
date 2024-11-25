@@ -28,6 +28,9 @@ class BlockbenchLoadHandler(
             loadModelFile(${jsonObject});
             document.getElementById('tab_bar').remove();
             document.getElementById('web_download_button').remove();
+            Prop.show_left_bar = false;
+            Prop.show_right_bar = false;
+            resizeWindow();
             """.trimIndent(), browser.url, 0
         )
     }
