@@ -1,0 +1,11 @@
+<idea-plugin>
+    <id>ru.melonhell.BlockbenchIDEA</id>
+    <name>BlockbenchIDEA</name>
+    <vendor url="https://github.com/MelonHell">MelonHell</vendor>
+    <description>Allows you to open .bbmodel files directly in IntelliJ IDEA using the web version of Blockbench</description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <fileEditorProvider implementation="ru.melonhell.blockbenchidea.BlockbenchEditorProvider"/>
+        <notificationGroup id="BlockbenchIDEA" displayType="BALLOON" isLogByDefault="true"/>
+    </extensions>
+</idea-plugin>
